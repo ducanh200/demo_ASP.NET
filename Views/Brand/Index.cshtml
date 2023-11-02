@@ -1,0 +1,38 @@
+﻿@model List<T2207A_MVC.Entities.Brand>
+@{
+    //var xyz = ViewData["categories"];
+    //var abc = ViewBag.categories;
+}
+<H1>Brand Page</H1>
+<a asp-controller="Brand" asp-action="Create" class="btn btn-primary"> Create new Brand</a>
+<div class="col-6">
+    <table class="table">
+        <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th></th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.name</td>
+                    <td>
+
+                        <a href="@Url.ActionLink("Edit","Brand",new{id=item.id})"
+                           class="btn btn-primary">Edit</a>
+                    </td>
+
+                    <td>
+
+                        <a href="@Url.ActionLink("Delete","Brand",new{id=item.id})"
+                           onclick="return confirm('Bạn muốn xóa danh mục @item.name')"
+                           class="btn btn-primary">Delete</a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

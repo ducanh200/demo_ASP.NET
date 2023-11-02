@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T2207A_MVC", "T2207A_MVC.csproj", "{A271CA6B-AE26-430A-B5BC-2CC3E4981E69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2207A_API", "..\T2207_API\T2207A_API.csproj", "{973B20C8-E837-4E45-90A0-421A1A78B365}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A271CA6B-AE26-430A-B5BC-2CC3E4981E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A271CA6B-AE26-430A-B5BC-2CC3E4981E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A271CA6B-AE26-430A-B5BC-2CC3E4981E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A271CA6B-AE26-430A-B5BC-2CC3E4981E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973B20C8-E837-4E45-90A0-421A1A78B365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973B20C8-E837-4E45-90A0-421A1A78B365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973B20C8-E837-4E45-90A0-421A1A78B365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973B20C8-E837-4E45-90A0-421A1A78B365}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49F8222C-F40D-4464-A1B9-F6389A9BC745}
+	EndGlobalSection
+EndGlobal

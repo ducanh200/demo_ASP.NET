@@ -1,0 +1,27 @@
+﻿@model T2207A_MVC.Models.BrandEditModel
+@{
+}
+<h1 class="text-center">Edit Brand:@Model.name</h1>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            @using (Html.BeginForm("Edit", "Brand", FormMethod.Post))
+            {
+                @Html.HiddenFor(m=>m.id)
+                <div class="mb-3">
+                    @Html.LabelFor(m => m.name)
+                    @Html.TextBoxFor(m => m.name, new {@class="form-control"})
+                    @Html.ValidationMessageFor(m => m.name,"", new {@class="text-danger"})
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            }
+            <div class="mb-3">
+                @Html.ActionLink("Back to list","Index")
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
